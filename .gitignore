@@ -1,4 +1,28 @@
-"__pycache__/" 
-"uploads/" 
-"outputs/" 
-"*.log" 
+@"
+# Data files - never push large data to git
+data/raw/
+data/uploads/
+data/clean/
+*.csv
+*.parquet
+
+# Virtual environment
+spark_env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Outputs
+outputs/
+"@ | Out-File -Encoding utf8 C:\Users\amarbir\self_learning\spark_flask_log_app\.gitignore
